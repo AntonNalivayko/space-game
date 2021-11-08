@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { Button, Modal, ModalBody, ModalHeader } from "reactstrap";
-import two from "../images/2.png";
-import three from "../images/3.png";
-import one from "../images/1.png";
-import six from "../images/6.png";
-import nine from "../images/9.png";
-import seven from "../images/7.png";
-import four from "../images/4.png";
-import five from "../images/5.png";
+import { Modal, ModalBody } from "reactstrap";
+import two from "../img/2.png";
+import three from "../img/3.png";
+import one from "../img/1.png";
+import six from "../img/6.png";
+import nine from "../img/9.png";
+import seven from "../img/7.png";
+import four from "../img/4.png";
+import five from "../img/5.png";
 import { Link } from "react-router-dom";
 
 const LevelOne = () => {
   const [openCard, setopenCard] = useState([]);
   const [matched, setMatched] = useState([]);
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const allId = [1, 2, 3, 4, 5, 6, 7, 9];
   const checkedCards = [...new Set(matched)];
   const pokemons = [
@@ -47,8 +47,6 @@ const LevelOne = () => {
       setMatched([...matched, firstmatch.id]);
     }
     if (openCard.length === 2) setTimeout(() => setopenCard([]), 1000);
-
-    // if(matched.length >= 8) setOpen(true);
 
     if (checkedCards.sort().join(",") === allId.sort().join(",")) {
       console.log("same members");
@@ -85,7 +83,6 @@ const LevelOne = () => {
         </ModalBody>
       </Modal>
 
-      {/* <Button onClick={()=> setOpen(true)}>dksfj</Button> */}
       <div className="app">
         <p className="title">easy level</p>
         <div className="flex-box">

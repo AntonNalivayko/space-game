@@ -26,7 +26,7 @@ body {
   width: 100%;
 }
 .app-box{
-  background-image: url("./images/back-game.webp");
+  background-image: url("./img/back-game.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -228,7 +228,7 @@ p strong {
   color: #d6aeb5;
   font-size: 100px;
   transition: 0.3s ease all;
-  background-image: url("./images/card-back.png");
+  background-image: url("./img/card-back.png");
   background-size: 150px;
 }
 @media (max-width: 1000px) {
@@ -282,7 +282,7 @@ p strong {
 .start-page {
   width: 100vw;
   height: 100vh;
-  background: url("./images/start-back.webp");
+  background: url("./img/start-back.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -302,7 +302,7 @@ p strong {
   margin: 0 auto;
   width: 1000px;
   height: 500px;
-  background: url("./images/start-title.png");
+  background: url("./img/start-title.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -331,7 +331,7 @@ p strong {
 .start-btn {
   width: 300px;
   height: 145px;
-  background: url("./images/start-btn.png");
+  background: url("./img/start-btn.png");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -351,7 +351,7 @@ p strong {
 }
 
 .start-btn:hover {
-  background: url("./images/start-btn-hover.png");
+  background: url("./img/start-btn-hover.png");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
@@ -367,7 +367,7 @@ p strong {
 }
 
 .start-btn:focus {
-  background: url("./images/start-btn-click.png");
+  background: url("./img/start-btn-click.png");
   border: none;
 }
 
@@ -403,7 +403,7 @@ p strong {
 
   height: 100%;
   width: 100%;
-  background: url('./images/modal-back.png');
+  background: url('./img/modal-back.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -450,7 +450,7 @@ p strong {
 }
 
 .next-btn{
-  background: url('./images/next-back.png');
+  background: url('./img/next-back.png');
   background-size: contain;
   background-repeat: no-repeat;
   border: none;
@@ -461,7 +461,7 @@ p strong {
 }
 
 .next-btn:hover{
-  background: url('./images/next-hover.png');
+  background: url('./img/next-hover.png');
   transform: scale(1.03);
   background-repeat: no-repeat;
   background-size: contain;
@@ -470,7 +470,7 @@ p strong {
 
 .next-btn:focus{
   transform: scale(1);
-  background: url('./images/next-click.png');
+  background: url('./img/next-click.png');
   background-repeat: no-repeat;
   background-size: contain;
 }

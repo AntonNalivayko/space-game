@@ -1,24 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { Button, Modal, ModalBody, ModalHeader } from "reactstrap";
-import one from "../images/1.png";
-import two from "../images/2.png";
-import three from "../images/3.png";
-import four from "../images/4.png";
-import five from "../images/5.png";
-import six from "../images/6.png";
-import seven from "../images/7.png";
-import eath from "../images/8.png";
-import nine from "../images/9.png";
-import ten from "../images/10.png";
-import eleven from "../images/11.png";
-import tweven from "../images/12.png";
-import stars from "../images/stars.png";
+import { Modal, ModalBody, } from "reactstrap";
+import one from "../img/1.png";
+import two from "../img/2.png";
+import three from "../img/3.png";
+import four from "../img/4.png";
+import five from "../img/5.png";
+import six from "../img/6.png";
+import seven from "../img/7.png";
+import eath from "../img/8.png";
+import nine from "../img/9.png";
+import ten from "../img/10.png";
+import eleven from "../img/11.png";
+import tweven from "../img/12.png";
+import stars from "../img/stars.png";
 import { Link } from "react-router-dom";
 
 const LevelTwo = () => {
   const [openCard, setopenCard] = useState([]);
   const [matched, setMatched] = useState([]);
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const allId = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
   const checkedCards = [...new Set(matched)];
@@ -87,12 +87,15 @@ const LevelTwo = () => {
           style={{ height: 500, textAlign: "center" }}
         >
           <p className="title text-center mt-5 " style={{ color: "#bbff33" }}>
-          Congratulations!
+            Congratulations!
           </p>
           <p className="modal-text text-left mt-3 mb-2">
-          You have completed all the levels of this game! You have a strong memory!
+            You have completed all the levels of this game! You have a strong
+            memory!
           </p>
-          <div className='stars'><img src={stars}/></div>
+          <div className="stars">
+            <img src={stars} />
+          </div>
         </ModalBody>
       </Modal>
       <div className="app">
